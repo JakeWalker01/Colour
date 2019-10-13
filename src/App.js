@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MainTitle from "./MainTitle";
 import SubHeader from "./SubHeader";
@@ -14,25 +14,49 @@ import right from "./img/ArrowRight.png";
 function App() {
   const prevIcon = <img className="navArrows" src={left} alt="Previous" />;
   const nextIcon = <img className="navArrows" src={right} alt="Next" />;
+
+  const [index, setIndex] = useState(0);
+  const [direction, setDirection] = useState(null);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+    setDirection(e.direction);
+    console.log("HandleSelect");
+  };
   return (
     <Container className="App">
-      <Carousel nextIcon={nextIcon} prevIcon={prevIcon} activeIndex={2}>
-        <Carousel.Item>
-          <div>Page One</div>
+      <Carousel
+        slide={false}
+        index={index}
+        direction={direction}
+        nextIcon={nextIcon}
+        prevIcon={prevIcon}
+        onSelect={handleSelect}
+      >
+        {/* <Carousel.Item>
+          <Carousel.Caption>
+            <div className="d-block w-100">Page One</div>
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <div>Page Two</div>
-        </Carousel.Item>
-        <Carousel.Item className="">
+          <div className="d-block w-100">Page Two</div>
+        </Carousel.Item> */}
+        <Carousel.Item className="Tile">
           <MainTitle />
-          <SubHeader />
+          <Carousel.Caption>
+            <SubHeader />
+          </Carousel.Caption>
+        </Carousel.Item>
+        {/* <Carousel.Item>
+          <Carousel.Caption>
+            <div className="d-block w-100">Page Four</div>
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <div>Page Four</div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div>Page Five</div>
-        </Carousel.Item>
+          <Carousel.Caption>
+            <div className="d-block w-100">Page Five</div>
+          </Carousel.Caption>
+        </Carousel.Item> */}
       </Carousel>
     </Container>
   );
