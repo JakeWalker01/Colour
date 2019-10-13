@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: -apple-system, "Pier Sans", BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "Pier Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Pier Sans"), local("PierSans"),
+    url("fonts/PierSans-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Pier Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Pier Sans"), local("PierSans"),
+    url("fonts/PierSans-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Pier Sans";
+  font-style: italic;
+  font-weight: bold;
+  src: local("Pier Sans"), local("PierSans"),
+    url("fonts/PierSans-BoldItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Pier Sans";
+  font-style: italic;
+  font-weight: normal;
+  src: local("Pier Sans"), local("PierSans"),
+    url("fonts/PierSans-Italic.otf") format("opentype");
+}
+
+body {
+  font-family: "Pier Sans";
+}
