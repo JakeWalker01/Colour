@@ -1,0 +1,47 @@
+.App {
+  background-color: #a422ce;
+  min-height: 800px;
+}
+/*
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-Main {
+  background-color: yellow;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+
+.Main {
+} */
+
+.MainTitle {
+  color: white;
+  font-family: "Pier Sans";
+  font-size: 200px;
+  font-weight: bold;
+}
+.SubHeader {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 33px;
+  font-family: "Pier Sans";
+}
+
+.navArrows {
+  height: 100px;
+}
