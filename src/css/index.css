@@ -17,28 +17,28 @@ code {
   font-style: normal;
   font-weight: normal;
   src: local("Pier Sans"), local("PierSans"),
-    url("fonts/PierSans-Regular.otf") format("opentype");
+    url("../fonts/PierSans-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: "Pier Sans";
   font-style: normal;
   font-weight: bold;
   src: local("Pier Sans"), local("PierSans"),
-    url("fonts/PierSans-Bold.otf") format("opentype");
+    url("../fonts/PierSans-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: "Pier Sans";
   font-style: italic;
   font-weight: bold;
   src: local("Pier Sans"), local("PierSans"),
-    url("fonts/PierSans-BoldItalic.otf") format("opentype");
+    url("../fonts/PierSans-BoldItalic.otf") format("opentype");
 }
 @font-face {
   font-family: "Pier Sans";
   font-style: italic;
   font-weight: normal;
   src: local("Pier Sans"), local("PierSans"),
-    url("fonts/PierSans-Italic.otf") format("opentype");
+    url("../fonts/PierSans-Italic.otf") format("opentype");
 }
 
 body {

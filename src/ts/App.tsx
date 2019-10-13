@@ -3,13 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MainTitle from "./MainTitle";
 import SubHeader from "./SubHeader";
 
-import "./App.css";
+import "../css/App.css";
 import Container from "react-bootstrap/Container";
 
 import Carousel from "react-bootstrap/Carousel";
 
-import left from "./img/ArrowLeft.png";
-import right from "./img/ArrowRight.png";
+import left from "../img/ArrowLeft.png";
+import right from "../img/ArrowRight.png";
 import DummyTile from "./Dummy";
 
 function App() {
@@ -17,19 +17,16 @@ function App() {
   const nextIcon = <img className="navArrows" src={right} alt="Next" />;
 
   const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState(null);
 
-  const handleSelect = (selectedIndex, e) => {
+  const handleSelect = (selectedIndex: number, e: any) => {
     setIndex(selectedIndex);
-    setDirection(e.direction);
     console.log("HandleSelect");
   };
   return (
     <Container className="App">
       <Carousel
         slide={false}
-        index={index}
-        direction={direction}
+        activeIndex={index}
         nextIcon={nextIcon}
         prevIcon={prevIcon}
         onSelect={handleSelect}
