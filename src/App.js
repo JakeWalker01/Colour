@@ -33,30 +33,24 @@ function App() {
         prevIcon={prevIcon}
         onSelect={handleSelect}
       >
-        {/* <Carousel.Item>
-          <Carousel.Caption>
-            <div className="d-block w-100">Page One</div>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="d-block w-100">Page Two</div>
-        </Carousel.Item> */}
         <Carousel.Item className="Tile">
           <MainTitle />
           <Carousel.Caption>
             <SubHeader />
           </Carousel.Caption>
         </Carousel.Item>
-        {/* <Carousel.Item>
+        <Carousel.Item className="Tile">
+          <MainTitle />
           <Carousel.Caption>
-            <div className="d-block w-100">Page Four</div>
+            <SubHeader />
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item className="Tile">
+          <MainTitle />
           <Carousel.Caption>
-            <div className="d-block w-100">Page Five</div>
+            <SubHeader />
           </Carousel.Caption>
-        </Carousel.Item> */}
+        </Carousel.Item>
       </Carousel>
     </Container>
   );

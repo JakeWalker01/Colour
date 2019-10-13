@@ -23,11 +23,16 @@
 }
 
 .navArrows {
-  height: 100px;
+  height: 90px;
 }
 
 .carousel-indicators li {
+  text-align: center;
   width: 10px;
   height: 10px;
   border-radius: 100%;
+}
+.carousel-indicators li.active {
+  width: 15px;
+  height: 15px;
 }
