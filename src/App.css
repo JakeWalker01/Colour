@@ -1,6 +1,7 @@
 .App {
   background-color: #a422ce;
-  min-height: 500px;
+  height: 100vh;
+  width: 100vw;
 }
 
 .Tile {
@@ -12,14 +13,12 @@
   font-family: "Pier Sans";
   font-size: 200px;
   font-weight: bold;
-  /* background-color: blue; */
   margin-bottom: 15px;
 }
 .SubHeader {
   color: white;
   font-size: 33px;
   font-family: "Pier Sans";
-  /* background-color: teal; */
 }
 
 .navArrows {
