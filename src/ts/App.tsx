@@ -4,7 +4,6 @@ import MainTitle from "./MainTitle";
 import SubHeader from "./SubHeader";
 
 import "../css/App.css";
-import Container from "react-bootstrap/Container";
 
 import Carousel from "react-bootstrap/Carousel";
 
@@ -23,7 +22,7 @@ function App() {
     console.log("HandleSelect");
   };
   return (
-    <Container className="App">
+    <div className="App">
       <Carousel
         slide={false}
         activeIndex={index}
@@ -50,7 +49,7 @@ function App() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-    </Container>
+    </div>
   );
 }
 
