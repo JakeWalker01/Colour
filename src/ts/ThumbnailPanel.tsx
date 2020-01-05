@@ -2,22 +2,21 @@ import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 
 import home from "../img/colour-home.jpg";
+import liam_wong from "../img/liam_wong_to_ky_oo_editorial_5.jpg";
 
 const MyCell = () => (
   <Col sm={true}>
-    <Image src={home} thumbnail />
+    <Image src={liam_wong} thumbnail />
   </Col>
 );
 
 const MyRow = () => (
   <Row>
     <MyCell />
-    <MyCell />
   </Row>
 );
 const ThumbnailPanel = () => (
   <Container className="thumbnails">
-    <MyRow />
     <MyRow />
   </Container>
 );

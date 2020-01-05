@@ -1,7 +1,13 @@
 .App {
-  background-color: #999999;
-  height: 100vh;
-  width: 100vw;
+  padding: 0;
+}
+
+.Header {
+  border: 1px solid black;
+  margin-bottom: 1px;
+}
+.NavLink {
+  border: 1px solid #666666;
 }
 
 .Tile {
@@ -13,7 +19,7 @@
   font-family: "Pier Sans";
   font-size: 200px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 1px;
 }
 .SubHeader {
   color: white;
@@ -21,6 +27,17 @@
   font-family: "Pier Sans";
 }
 
+.fadeTitle {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  transition-duration: 2s;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .navArrows {
   height: 90px;
 }
