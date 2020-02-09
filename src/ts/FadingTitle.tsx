@@ -6,9 +6,7 @@ import { Fade, Container } from "react-bootstrap";
 const FadingTitle = () => {
   const [open, setOpen] = useState(true);
   const fadeout = () => {
-    console.log("nooo");
     setTimeout(() => {
-      console.log("fooo");
       setOpen(false);
     }, 3000);
   };
