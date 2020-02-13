@@ -1,8 +1,8 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import ContentPage from "../components/ContentPage";
 
 const TunnelEdit = () => (
-  <Container>
+  <ContentPage headerText="Tunnel Edit">
     <p>
       I chose to manipulate this photo as it had the most composition out of all
       of them. Using photoshop I extended the length of the tunnel by copy and
@@ -16,6 +16,6 @@ const TunnelEdit = () => (
       the colour the photo would look bland and uninteresting and the reflection
       of the colour make the image pop.
     </p>
-  </Container>
+  </ContentPage>
 );
 export default TunnelEdit;

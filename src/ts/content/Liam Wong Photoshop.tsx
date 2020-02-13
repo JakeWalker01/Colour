@@ -8,7 +8,7 @@ import photoshopped from "../../img/lw-photoshop/lw-photoshop-1.png";
 import unphotoshopped from "../../img/lw-photoshop/lw-photoshop-2.png";
 
 const LiamWongPhotoshop = () => (
-  <ContentPage>
+  <ContentPage headerText="Liam Wong Photoshop">
     <Row>
       <p>
         This is a photo by, Liam Wong. Looking at the composition of the image

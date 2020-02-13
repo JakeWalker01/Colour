@@ -4,10 +4,9 @@ import { Row } from "react-bootstrap";
 
 import eugene_tumusiime from "../../img/Eugene.jpg";
 import ContentPage from "../components/ContentPage";
-import CenteredImageRow from "../components/CenteredImageRow";
 
 const EugeneTumusiime = () => (
-  <ContentPage headerText="Eugene Tumusiime">
+  <ContentPage headerText="Eugene Tumusiime" img={eugene_tumusiime}>
     <Row>
       <p>
         Eugene Tumusiime has been a photographer since 2016 and takes
@@ -25,7 +24,6 @@ const EugeneTumusiime = () => (
         night so that the colours are highlighted.
       </p>
     </Row>
-    <CenteredImageRow img={eugene_tumusiime} />
   </ContentPage>
 );
 export default EugeneTumusiime;

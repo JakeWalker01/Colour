@@ -8,6 +8,7 @@ import { Container } from "react-bootstrap";
 import FadingTitle from "./FadingTitle";
 import Header from "./Header";
 import RouterSwitch from "./RouterSwitch";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Header />
         <RouterSwitch />
         <FadingTitle />
-        <div>Bottom Navigation</div>
+        <Footer />
       </Container>
     </Router>
   );
