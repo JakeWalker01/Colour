@@ -1,13 +1,7 @@
 import React from "react";
-import { Container, Row, Image } from "react-bootstrap";
-import lwphotos from "../../img/LiamWong.jpg";
+import lwphotos from "../../img/Liam Wong.jpg";
+import ContentPage from "../components/ContentPage";
 
-const LiamWongPhotos = () => (
-  <Container>
-    <Row>
-      <Image src={lwphotos} />
-    </Row>
-  </Container>
-);
+const LiamWongPhotos = () => <ContentPage img={lwphotos}></ContentPage>;
 
 export default LiamWongPhotos;

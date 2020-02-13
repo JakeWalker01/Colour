@@ -1,9 +1,8 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import ContentPage from "../components/ContentPage";
 
 const ShootOne = () => (
-  <Container>
-    <h1>Shoot 1</h1>
+  <ContentPage headerText="Shoot 1">
     <p>
       My intentions for this shoot is to capture dark and uninteresting things
       to edit them in the style of Liam Wong and Troy Paiva. I want to also make
@@ -18,6 +17,6 @@ const ShootOne = () => (
       use a higher ISO so more light is let in. If the images were grainy I
       would sharpen them in photoshop.
     </p>
-  </Container>
+  </ContentPage>
 );
 export default ShootOne;

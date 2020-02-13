@@ -44,3 +44,8 @@ code {
 body {
   font-family: "Pier Sans";
 }
+
+.page-header {
+  font-family: Oswald;
+  font-weight: bold;
+}

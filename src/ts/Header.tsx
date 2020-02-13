@@ -1,6 +1,12 @@
 import React from "react";
-import { Nav, Navbar, NavItem } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
+const Navver = (props: { href: string; text: String }) => (
+  <NavDropdown.Item>
+    <Link to={props.href}>{props.text}</Link>
+  </NavDropdown.Item>
+);
 
 const Header = () => (
   <div>
@@ -9,30 +15,19 @@ const Header = () => (
         <Link to="/" className="nav-link">
           Home
         </Link>
-        <Link className="nav-link" to="/liamwong">
-          Liam Wong
-        </Link>
-        <Link className="nav-link" to="/liamwongphotos">
-          Liam Wong Photos
-        </Link>
-        <Link className="nav-link" to="/liamwongphotoshop">
-          Liam Wong Photoshop
-        </Link>
-        <Link className="nav-link" to="/troypaiva">
-          Troy Paiva
-        </Link>
-        <Link className="nav-link" to="/eugenetumusiime">
-          Eugene Tumusiime
-        </Link>
-        <Link className="nav-link" to="/shootone">
-          Shoot One
-        </Link>
-        <Link className="nav-link" to="/tunneledit">
-          Tunnel Edit
-        </Link>
-        <Link className="nav-link" to="/finalpiece">
-          Final Piece
-        </Link>
+        <NavDropdown title="Pages" id="basic-nav-dropdown">
+          <Navver href="/liamwong" text="Liam Wong" />
+          <Navver href="/liamwongphotos" text="Liam Wong Photos" />
+          <Navver href="/liamwongphotoshop" text="Liam Wong Photoshop" />
+          <NavDropdown.Divider />
+          <Navver href="/troypaiva" text="Troy Paiva" />
+          <NavDropdown.Divider />
+          <Navver href="/eugenetumusiime" text="Eugene Tumusiime" />
+          <NavDropdown.Divider />
+          <Navver href="/shootone" text="Shoot One" />
+          <Navver href="/tunneledit" text="Tunnel Edit" />
+          <Navver href="/finalpiece" text="Final Piece" />
+        </NavDropdown>
       </Nav>
     </Navbar>
   </div>

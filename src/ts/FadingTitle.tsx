@@ -13,7 +13,7 @@ const FadingTitle = () => {
   console.log({ open });
   fadeout();
   return (
-    <Fade in={open} timeout={10000} unmountOnExit={false}>
+    <Fade in={open} timeout={10000} unmountOnExit={true}>
       <Container className="fadeTitle">
         <MainTitle />
         <SubHeader />

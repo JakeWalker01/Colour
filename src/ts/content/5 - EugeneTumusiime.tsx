@@ -1,14 +1,13 @@
 import React from "react";
 
-import { Container, Image, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
-import eugene_tumusiime_1 from "../../img/eugene_tumusiime_1.png";
-import eugene_tumusiime_2 from "../../img/eugene_tumusiime_2.png";
-import eugene_tumusiime_3 from "../../img/eugene_tumusiime_3.png";
-import eugene_tumusiime_4 from "../../img/eugene_tumusiime_4.png";
+import eugene_tumusiime from "../../img/Eugene.jpg";
+import ContentPage from "../components/ContentPage";
+import CenteredImageRow from "../components/CenteredImageRow";
 
 const EugeneTumusiime = () => (
-  <Container style={{ width: "800px" }}>
+  <ContentPage headerText="Eugene Tumusiime">
     <Row>
       <p>
         Eugene Tumusiime has been a photographer since 2016 and takes
@@ -26,22 +25,7 @@ const EugeneTumusiime = () => (
         night so that the colours are highlighted.
       </p>
     </Row>
-    <Row>
-      <Image style={{ width: "800px" }} src={eugene_tumusiime_3} />
-    </Row>
-    <Row>
-      <Image
-        style={{ width: "500px", height: "400px" }}
-        src={eugene_tumusiime_1}
-      />
-      <Image
-        style={{ width: "300px", height: "400px" }}
-        src={eugene_tumusiime_4}
-      />
-    </Row>
-    <Row>
-      <Image style={{ width: "800px" }} src={eugene_tumusiime_2} />
-    </Row>
-  </Container>
+    <CenteredImageRow img={eugene_tumusiime} />
+  </ContentPage>
 );
 export default EugeneTumusiime;
